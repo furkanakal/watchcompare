@@ -1,5 +1,6 @@
 import { notFound } from "next/navigation";
 import Link from "next/link";
+import Image from "next/image";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import WatchCard from "@/components/WatchCard";
@@ -38,6 +39,9 @@ export default async function BrandDetailPage({ params }: { params: Promise<{ sl
 
             <div className="sm:flex sm:items-start sm:justify-between gap-6">
               <div>
+                {brand.logo && (
+                  <Image src={brand.logo} alt={`${brand.name} logo`} width={180} height={50} className="object-contain max-h-10 w-auto mb-3" />
+                )}
                 <h1 className="text-3xl sm:text-4xl font-bold text-text-primary tracking-tight">{brand.name}</h1>
                 <p className="text-text-secondary mt-1">
                   {brand.country} &middot; Founded {brand.founded} &middot; {brand.parent}

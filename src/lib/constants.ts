@@ -7,6 +7,7 @@ export const BRANDS: Record<string, BrandInfo> = {
     country: "USA / Switzerland",
     founded: 1892,
     parent: "Swatch Group",
+    logo: "/logos/hamilton.svg",
     description:
       "Born in Lancaster, Pennsylvania and now based in Bienne, Switzerland, Hamilton bridges American spirit with Swiss precision. Known for military heritage and aviation watches, the brand offers exceptional value with in-house-grade movements at accessible prices.",
   },
@@ -16,6 +17,7 @@ export const BRANDS: Record<string, BrandInfo> = {
     country: "Switzerland",
     founded: 1853,
     parent: "Swatch Group",
+    logo: "/logos/tissot.png",
     description:
       "One of the founding members of the Swatch Group, Tissot has been crafting watches in Le Locle since 1853. Positioned as the gateway to Swiss watchmaking, Tissot delivers Powermatic 80 movements with silicon hairsprings at remarkable price points.",
   },
@@ -25,6 +27,7 @@ export const BRANDS: Record<string, BrandInfo> = {
     country: "Japan",
     founded: 1881,
     parent: "Seiko Group",
+    logo: "/logos/seiko.svg",
     description:
       "A vertically integrated Japanese manufacture that produces everything from movements to hairsprings in-house. Seiko's range spans from the affordable 5 Sports line to the Grand Seiko luxury tier, with legendary reliability across all price points.",
   },
@@ -34,6 +37,7 @@ export const BRANDS: Record<string, BrandInfo> = {
     country: "Japan",
     founded: 1950,
     parent: "Seiko Epson (Seiko Group)",
+    logo: "/logos/orient.svg",
     description:
       "Orient is one of the few watch brands that designs and manufactures its own mechanical movements in-house. A subsidiary of Seiko Epson, Orient is renowned for delivering extraordinary value — offering robust in-house automatic calibers, sapphire crystals, and solid finishing at prices that undercut most Swiss competitors.",
   },
@@ -43,6 +47,7 @@ export const BRANDS: Record<string, BrandInfo> = {
     country: "Japan",
     founded: 1918,
     parent: "Citizen Watch Group",
+    logo: "/logos/citizen.svg",
     description:
       "Citizen is a Japanese watchmaking powerhouse known for its pioneering Eco-Drive solar technology. As the parent company of Bulova, Frederique Constant, and movement maker Miyota, Citizen spans from affordable everyday timepieces to the ultra-precise Chronomaster line. Their commitment to innovation includes the world's thinnest light-powered movement and Super Titanium cases.",
   },

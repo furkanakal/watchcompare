@@ -1,4 +1,5 @@
 import Link from "next/link";
+import Image from "next/image";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import { BRANDS } from "@/lib/constants";
@@ -37,11 +38,19 @@ export default function BrandsPage() {
                   <div className="sm:flex">
                     {/* Logo area */}
                     <div className="sm:w-48 bg-surface-sunken flex items-center justify-center p-8 sm:p-10 group-hover:bg-brand-50 transition-colors">
-                      <div className="text-center">
+                      {brand.logo ? (
+                        <Image
+                          src={brand.logo}
+                          alt={`${brand.name} logo`}
+                          width={160}
+                          height={60}
+                          className="object-contain max-h-12 w-auto"
+                        />
+                      ) : (
                         <span className="text-3xl font-bold text-text-primary group-hover:text-brand-700 transition-colors">
                           {brand.name}
                         </span>
-                      </div>
+                      )}
                     </div>
 
                     {/* Info */}
